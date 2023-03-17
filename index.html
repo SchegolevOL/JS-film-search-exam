@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://kit.fontawesome.com/32dfc70dbe.js" crossorigin="anonymous"></script>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script defer src="./js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logotype">
+            <a href=""><img src="./images/t.svg" alt=""></a>
+        </div>
+        <div>
+            <ul class="left-menu">
+                <li class="menu-title"><a href="">Фильмы</a>
+                    <ul class="menu-ul">
+                        <li><a href="">Популярные</a></li>
+                        <li><a href="">Смотрят сейчас</a></li>
+                        <li><a href="">Ожидаемое</a></li>
+                        <li><a href="">Лучшее</a></li>
+                    </ul>
+                </li>
+                <li class="menu-title"><a href="">Сериалы</a>
+                    <ul class="menu-ul">
+                        <li><a href="">Популярные</a></li>
+                        <li><a href="">В эфире сегодня</a></li>
+                        <li><a href="">По телевидению</a></li>
+                        <li><a href="">Лучшее</a></li>
+                    </ul>
+                </li>
+                <li class="menu-title"><a href="">Люди</a>
+                    <ul class="menu-ul">
+                        <li><a href="">Популярные</a></li>
+                    </ul>
+                </li>
+                <li class="menu-title"><a href="">Ещё</a>
+                    <ul class="menu-ul">
+                        <li><a href="">Обсуждения</a></li>
+                        <li><a href="">Доска почёта</a></li>
+                        <li><a href="">Поддержка</a></li>
+                        <li><a href="">API</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="right-menu">
+            <div>
+                <a href=""><div class="border-ru">RU</div></i></a>
+            </div>
+
+            <div>
+                <a href=""><i class="fa-solid fa-globe"></i></a></i>
+            </div>
+            <div><a href="">Войти</a></div>
+            <div><a href="">Присоедениться</a></div>
+            <div>
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a></i>
+            </div>
+        </div>
+    </header>
+    <div id="title" class="">
+        <div>
+            <h1>Добро пожаловать</h1>
+            <h3>Милионы фильмов и сериалов</h3>
+        </div>
+        <form id="filmSearch" placeholder=".form-control-lg" aria-label=".form-control-lg example">
+            <input id="cityName" type="text" placeholder="Найти фильм, сериал, персону......">
+            <button class="btn btn-primary">Search</button>
+        </form>
+    </div>
+    <div class="btn-triger">
+        <h3>В тренде</h3>
+        <div>
+            <button id="btnToday" type="button" class="btn-today-rev">Сегодня</button>
+            <button id="btnWeek" type="button" class="btn-week-rev">На этой неделе</button>
+        </div>
+
+    </div>
+    <div>
+        <div id="contentToday" class="container filmCard none">
+            <div class="row">
+                <div class="col">
+                    <div class="card " style="width: 8rem;">
+                        <a href=""><img src="./images/1.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <a class="film" href="" style="text-decoration: none ">Торжество мести</a>
+                                <div>30 дек 2022</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 8rem;">
+                        <a href=""><img src="./images/2.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <a class="film" href="" style="text-decoration: none">Операция «Фортуна»: Искусство
+                                    побеждать</a>
+                                <div>04 янв 2023</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 8rem;">
+                        <a href=""><img src="./images/3.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <a class="film" href="" style="text-decoration: none">Лютер: Павшее солнце</a>
+                                <div>24 фев 2023</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 8rem;">
+                        <a href=""><img src="./images/4.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <a class="film" href="" style="text-decoration: none">Пропавшая без вести</a>
+                                <div>19 янв 2023</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 8rem;">
+                        <a href=""><img src="./images/5.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <a class="film" href="" style="text-decoration: none">Крик 6</a>
+                                <div>08 мар 2023</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 8rem;">
+                        <a href=""><img src="./images/6.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <a class="film" href="" style="text-decoration: none">Марлоу</a>
+                                <div>07 апр 2013</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contentWeek" class="container filmCard">
+            <div class="row">
+                <div class="col">
+                    <div class="card " style="width: 8rem;">
+                        <a href=""><img src="./images/7.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <a class="film" href="" style="text-decoration: none ">Кокаиновый медведь</a>
+                                <div>22 фев 2023</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 8rem;">
+                        <a href=""><img src="./images/8.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <a class="film" href="" style="text-decoration: none">Одни из нас</a>
+                                <div>15 янв 2023</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 8rem;">
+                        <a href=""><img src="./images/9.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <a class="film" href="" style="text-decoration: none">Всё везде и сразу</a>
+                                <div>24 мар 2022</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 8rem;">
+                        <a href=""><img src="./images/10.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <a class="film" href="" style="text-decoration: none">Мандалорец</a>
+                                <div>12 ноя 2019</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 8rem;">
+                        <a href=""><img src="./images/11.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <a class="film" href="" style="text-decoration: none">Атака титанов</a>
+                                <div>07 апр 2013</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 8rem;">
+                        <a href=""><img src="./images/12.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <a class="film" href="" style="text-decoration: none">Кит</a>
+                                <div>09 дек 2022</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="youTube">
+    <div class="tr">
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/G5RHRg6zEhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="tr">
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/fi5RiUg-pNQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    
+</div>
+<footer>
+
+</footer>
+</body>
+
+</html>
